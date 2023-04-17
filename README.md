@@ -1,10 +1,18 @@
+
 # Windows
-## Dependencies
+### Font
+- [Liberation Mono Nerd Font]
+
+### Mouse Cursor
+- Normal Select: cross_l.cur
+- Link Select: cross_rl.cur
+
+### Dependencies
  - Windows Terminal
  - Powershell
  - Neovim
 
-## Installation
+### Config
 ```console
 $ cd cd $env:USERPROFILE
 $ git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
@@ -20,7 +28,9 @@ $ mklink $env:USERPROFILE\Appdata\local\Packages\Microsoft.WindowsTerminal_8weky
 ```
 Note: If you cannot change settings.json you may need to run this command with windows terminal closed
 
-# Font
-- [Liberation Mono Nerd Font]
+# Arhc linux
+### Font
+ - [TTF Liberation Mono Nerd]
 
 [Liberation Mono Nerd Font]: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/LiberationMono/complete/Literation%20Mono%20Nerd%20Font%20Complete%20Mono.ttf
+[TTF Liberation Mono Nerd]: https://archlinux.org/packages/community/any/ttf-liberation-mono-nerd/
