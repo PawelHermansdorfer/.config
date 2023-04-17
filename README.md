@@ -43,6 +43,8 @@
 > Install-Module -Name PSReadLine -Force
 > Install-Module -Name PSFzf -Force
 > Install-Module -Name Pscx -Force
+> scoop install neofetch
+> scoop install fzf
 ```
  - Link configs to repository
 ```console
