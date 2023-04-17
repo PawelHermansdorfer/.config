@@ -20,15 +20,6 @@
             "keys": "ctrl+f"
         },
         {
-            "command":
-            {
-                "action": "splitPane",
-                "split": "auto",
-                "splitMode": "duplicate"
-            },
-            "keys": "alt+shift+d"
-        },
-        {
             "command": "find"
         }
     ],
@@ -49,7 +40,7 @@
             "altGrAliasing": true,
             "antialiasingMode": "cleartype",
             "backgroundImageOpacity": 0.6,
-            "colorScheme": "Henna",
+            "colorScheme": "Darkwood",
             "cursorShape": "filledBox",
             "elevate": false,
             "experimental.retroTerminalEffect": false,
