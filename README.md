@@ -32,7 +32,7 @@
 ```
  - Clone Repository
 ```console
-> cd cd $env:USERPROFILE
+> cd $env:USERPROFILE
 > git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
 ```
  - Install Modules
