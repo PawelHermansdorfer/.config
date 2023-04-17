@@ -1,5 +1,10 @@
 
 # Windows
+![Desktop Screenshot](/images/windows.png "Hello")
+### Wallpaper
+- [Wallpaper][Windows Wallpaper]
+- [Other great wallpapers]
+
 ### Font
 - [Liberation Mono Nerd Font]
 
@@ -25,16 +30,19 @@
 
 ### Setup
  - Install Winget(App Installer) from Microsoft Store
+
  - Install Scoop
 ```console
 > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 > irm get.scoop.sh | iex
 ```
+
  - Clone Repository
 ```console
 > cd $env:USERPROFILE
 > git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
 ```
+
  - Install Modules
 ```console
 > Install-Module -Name Terminal-Icons -Repository PSGallery -Force
@@ -46,6 +54,7 @@
 > scoop install neofetch
 > scoop install fzf
 ```
+
  - Link configs to repository
 ```console
 > echo ". $env:USERPROFILE\.config\powershell\user_profile.ps1" >> $PROFILE.CurrentUserCurrentHost
@@ -55,8 +64,14 @@
 Note: If you cannot change settings.json you may need to run this command with windows terminal closed
 
 # Arch Linux
+### Wallpaper
+- [Wallpaper][Linux Wallpaper]
+
 ### Font
  - [TTF Liberation Mono Nerd]
 
 [Liberation Mono Nerd Font]: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/LiberationMono/complete/Literation%20Mono%20Nerd%20Font%20Complete%20Mono.ttf
 [TTF Liberation Mono Nerd]: https://archlinux.org/packages/community/any/ttf-liberation-mono-nerd/
+[Windows wallpaper]: https://wallpapercave.com/w/wp11596702
+[Other great wallpapers]: https://wallpapercave.com/darkwood-game-wallpapers
+[Linux wallpaper]: https://www.deviantart.com/grivetart/art/iPad-Pro-Procreate-test-607332295
