@@ -7,6 +7,8 @@ function prompt
     "$Env:username $((''+$PWD).replace($HOME, '~')) $ "
 }
 
+Start-Process neofetch  -NoNewWindow
+
 
 # Alias
 Set-Alias -Name vim -Value nvim
