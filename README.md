@@ -37,13 +37,7 @@
 > irm get.scoop.sh | iex
 ```
 
- - Clone Repository
-```console
-> cd $env:USERPROFILE
-> git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
-```
-
- - Install Modules
+- Install Modules
 ```console
 > Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 > Install-Module -Name Recycle -Force
@@ -55,6 +49,15 @@
 > scoop install neofetch fzf neovim powertoys
 ```
 
+ - Clone Repository
+```console
+> cd $env:USERPROFILE
+> git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
+```
+
+ - Restore PowerToys settings
+Go to (General > "Backup & restore" > Location) and select path to folder .config/powertoys. Next click button "Restore".
+
  - Link configs to repository
 ```console
 > echo ". $env:USERPROFILE\.config\powershell\user_profile.ps1" >> $PROFILE.CurrentUserCurrentHost
@@ -62,9 +65,6 @@
 > mklink $env:USERPROFILE\Appdata\local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json $env:USERPROFILE\.config\windows_terminal\settings.json
 ```
 Note: If you cannot change settings.json you may need to run this command with windows terminal closed.
-
- - Restore PowerToys settings
-Go to (General > "Backup & restore" > Location) and select path to folder .config/powertoys. Next click button "Restore".
 
 
 # Arch Linux
