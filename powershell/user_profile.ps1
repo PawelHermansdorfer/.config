@@ -4,7 +4,7 @@
 # Prompt
 function prompt
 {
-    "$Env:username $((''+$PWD).replace($HOME, '~')) $ "
+    "[$Env:username $((''+$PWD).replace($HOME, '~'))]$ "
 }
 
 
