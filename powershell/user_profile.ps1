@@ -114,11 +114,11 @@ if($found_vcvarsall -eq $True)
 }
 
 
-
-
-
 # Touch
-Remove-Item 'Alias:\touch' -Force
+if(test-path alias:touch)
+{
+    Remove-Item 'Alias:\touch' -Force
+}
 Function touch {
     [cmdletbinding()]
     $file = $args[0]
