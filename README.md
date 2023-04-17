@@ -1,6 +1,7 @@
 
 # Windows
 ![Desktop Screenshot](/images/windows.png "Hello")
+
 ### Wallpaper
 - [Wallpaper][Windows Wallpaper]
 - [Other great wallpapers]
@@ -23,6 +24,7 @@
 ### Apps
  - Windows Terminal
  - Powershell
+ - PowerToys
  - Git
  - Neovim
  - Neofetch
