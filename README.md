@@ -1,5 +1,13 @@
 # Windows
+## Dependencies
+ - Windows Terminal
+ - Powershell
+ - Neovim
+
+## Installation
 ```console
+$ cd cd $env:USERPROFILE
+$ git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
 $ Install-Module -Name Terminal-Icons -Repository PSGallery -Force
 $ Install-Module -Name Recycle -Force
 $ Install-Module -Name z -Force
@@ -10,6 +18,7 @@ $ echo ". $env:USERPROFILE\.config\powershell\user_profile.ps1" >> $PROFILE.Curr
 $ mklink $env:USERPROFILE\Appdata\local\nvim $env:USERPROFILE\.config\nvim
 $ mklink $env:USERPROFILE\Appdata\local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json $env:USERPROFILE\.config\windows_terminal\settings.json
 ```
+Note: If you cannot change settings.json you may need to run this command with windows terminal closed
 
 # Font
 - [Liberation Mono Nerd Font]
