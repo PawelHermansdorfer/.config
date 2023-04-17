@@ -7,8 +7,6 @@ function prompt
     "$Env:username $((''+$PWD).replace($HOME, '~')) $ "
 }
 
-Start-Process neofetch  -NoNewWindow
-
 
 # Alias
 Set-Alias -Name vim -Value nvim
@@ -96,7 +94,8 @@ elseif(Test-Path -Path "C:\Program Files\Microsoft Visual Studio\2022\Profession
 # Not found
 else
 {
-    Write-Output "Cannot find vcvarsall.bat.\nYou must have installed Visual Studio"
+    Write-Output "Cannot find vcvarsall.bat."
+    Write-Output "You must have installed Visual Studio"
     $found_vcvarsall = $False
 }
 
@@ -160,3 +159,7 @@ function CheckFile($file_path)
 {
      Test-Path -Path $file_path -PathType Leaf
 }
+
+
+# Neofetch
+Start-Process neofetch  -NoNewWindow
