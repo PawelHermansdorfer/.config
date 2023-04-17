@@ -2,12 +2,10 @@
 # Windows
 ![Desktop Screenshot](/images/windows.png "Hello")
 
-### Wallpaper
-- [Wallpaper][Windows Wallpaper]
-- [Other great wallpapers]
-
-### Font
-- [Liberation Mono Nerd Font]
+### Wallpaper and font
+- [Wallpaper][Windows wallpaper]
+- [More wallpapers][Windows more wallpapers]
+- [Font][Windows Font]
 
 ### Mouse and keyboard
 - Normal cursor: cross_l.cur
@@ -53,8 +51,8 @@
 > Install-Module -Name PSReadLine -Force
 > Install-Module -Name PSFzf -Force
 > Install-Module -Name Pscx -Force
-> scoop install neofetch
-> scoop install fzf
+> scoop bucket add extras
+> scoop install neofetch fzf neovim powertoys
 ```
 
  - Link configs to repository
@@ -63,17 +61,20 @@
 > mklink $env:USERPROFILE\Appdata\local\nvim $env:USERPROFILE\.config\nvim
 > mklink $env:USERPROFILE\Appdata\local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json $env:USERPROFILE\.config\windows_terminal\settings.json
 ```
-Note: If you cannot change settings.json you may need to run this command with windows terminal closed
+Note: If you cannot change settings.json you may need to run this command with windows terminal closed.
+
+ - Restore PowerToys settings
+Go to (General > "Backup & restore" > Location) and select path to folder .config/powertoys. Next click button "Restore".
+
 
 # Arch Linux
-### Wallpaper
-- [Wallpaper][Linux Wallpaper]
+### Wallpaper and font
+- [Wallpaper][Linux wallpaper]
+- [Font][Linux font]
 
-### Font
- - [TTF Liberation Mono Nerd]
-
-[Liberation Mono Nerd Font]: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/LiberationMono/complete/Literation%20Mono%20Nerd%20Font%20Complete%20Mono.ttf
-[TTF Liberation Mono Nerd]: https://archlinux.org/packages/community/any/ttf-liberation-mono-nerd/
+[Windows font]: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/LiberationMono/complete/Literation%20Mono%20Nerd%20Font%20Complete%20Mono.ttf
 [Windows wallpaper]: https://wallpapercave.com/w/wp11596702
-[Other great wallpapers]: https://wallpapercave.com/darkwood-game-wallpapers
+[Windows more wallpapers]: https://wallpapercave.com/darkwood-game-wallpapers
+
 [Linux wallpaper]: https://www.deviantart.com/grivetart/art/iPad-Pro-Procreate-test-607332295
+[Linux font]: https://archlinux.org/packages/community/any/ttf-liberation-mono-nerd/
