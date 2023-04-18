@@ -1,3 +1,15 @@
+# Arch Linux
+### Wallpaper and font
+- [Wallpaper][Linux wallpaper]
+- [Font][Linux font]
+
+### Apps
+- zsh (shell)
+- dwa (window manager)
+- lightdm (login manager)
+- web-greeter && lightdm-neon (lightdm theme)
+- neofetch
+
 
 # Windows
 ![Desktop Screenshot](/images/windows.png "Hello")
@@ -66,11 +78,6 @@ Note: If you cannot change settings.json you may need to run this command with w
  - Restore PowerToys settings
 Go to (General > "Backup & restore" > Location) and select path to folder .config/powertoys. Next click button "Restore".
 
-
-# Arch Linux
-### Wallpaper and font
-- [Wallpaper][Linux wallpaper]
-- [Font][Linux font]
 
 # Grub
 ### Theme
