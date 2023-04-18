@@ -11,6 +11,7 @@
 - web-greeter && lightdm-neon (lightdm theme)
 - neofetch
 - picom (pijulius fork) ( yay -S picom-pijulius-git)
+- dmenu
 
 
 # Windows
