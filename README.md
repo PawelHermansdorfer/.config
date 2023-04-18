@@ -72,6 +72,26 @@ Go to (General > "Backup & restore" > Location) and select path to folder .confi
 - [Wallpaper][Linux wallpaper]
 - [Font][Linux font]
 
+# Grub
+### Theme
+ - https://github.com/shvchk/poly-dark
+```console
+wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
+```
+ - https://github.com/RomjanHossain/Grub-Themes
+- ```console
+sudo nvim /etc/defalut/grub
+ ```
+ add "fsck.mode=skip quiet splash loglevel=3" to kernel boot parameters
+ - ```console
+ sudo nvim /boot/grub/grub.cfg
+ ```
+ comment lines
+ ```
+ echo 'Loading Linux Linux...'
+ echo 'Loading initial ram disk ...'
+ ```
+
 [Windows font]: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/LiberationMono/complete/Literation%20Mono%20Nerd%20Font%20Complete%20Mono.ttf
 [Windows wallpaper]: https://wallpapercave.com/w/wp11596702
 [Windows more wallpapers]: https://wallpapercave.com/darkwood-game-wallpapers
