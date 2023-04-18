@@ -10,7 +10,7 @@
 - lightdm (login manager)
 - web-greeter && lightdm-neon (lightdm theme)
 - neofetch
-- picom (pijulis fork) ( yay -S picom-pijulius-git)
+- picom (pijulius fork) ( yay -S picom-pijulius-git)
 
 
 # Windows
