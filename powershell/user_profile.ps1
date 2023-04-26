@@ -1,26 +1,6 @@
 # set PowerShell to UTF-8
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
-# Prompt
-function write_branchname () {
-    try {
-        $branch = git rev-parse --abbrev-ref HEAD
-
-        if ($branch -eq "HEAD") {
-            # we're probably in detached HEAD state, so print the SHA
-            $branch = git rev-parse --short HEAD
-            Write-Host " ($branch)" -ForegroundColor "red"
-        }
-        else {
-            # we're on an actual branch, so print it
-            Write-Host " ($branch)" -ForegroundColor "blue"
-        }
-    } catch {
-        # we'll end up here if we're in a newly initiated git repo
-        Write-Host " (no branches yet)" -ForegroundColor "yellow"
-    }
-}
-
 function prompt
 {
     $user_name = $Env:username 
@@ -44,7 +24,7 @@ Set-Alias -Name nvide -Value neovide
 Set-Alias -Name ll -Value ls
 Set-Alias -Name open -Value explorer
 Set-Alias -Name grep -Value findstr
-
+function treef { & tree /f}
 
 # Remove to bin
 Set-Alias -Name rm -Value Remove-ItemSafely
@@ -65,6 +45,7 @@ Set-PSReadLineKeyHandler -Chord 'Ctrl+RightArrow' -Function NextWord
 Set-PSReadLineKeyHandler -Chord 'Ctrl+LeftArrow' -Function BackwardWord
 Set-PSReadLineKeyHandler -Chord 'Ctrl+Backspace' -Function BackwardDeleteWord
 Set-PSReadLineKeyHandler -Chord 'Ctrl+Delete' -Function DeleteWord
+
 
 
 # Fuzzy finder
