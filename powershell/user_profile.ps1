@@ -2,9 +2,39 @@
 [console]::InputEncoding = [console]::OutputEncoding = New-Object System.Text.UTF8Encoding
 
 # Prompt
+function write_branchname () {
+    try {
+        $branch = git rev-parse --abbrev-ref HEAD
+
+        if ($branch -eq "HEAD") {
+            # we're probably in detached HEAD state, so print the SHA
+            $branch = git rev-parse --short HEAD
+            Write-Host " ($branch)" -ForegroundColor "red"
+        }
+        else {
+            # we're on an actual branch, so print it
+            Write-Host " ($branch)" -ForegroundColor "blue"
+        }
+    } catch {
+        # we'll end up here if we're in a newly initiated git repo
+        Write-Host " (no branches yet)" -ForegroundColor "yellow"
+    }
+}
+
 function prompt
 {
-    "[$Env:username $((''+$PWD).replace($HOME, '~'))]$ "
+    $user_name = $Env:username 
+    $curr_path = $((''+$PWD).replace($HOME, '~'))
+    $git_branch = git branch --show-current
+
+    if ($git_branch)
+    {
+        return "[$user_name $curr_path ($git_branch)]$ "
+    }
+    else
+    {
+        return "[$user_name $curr_path]$ "
+    }
 }
 
 
