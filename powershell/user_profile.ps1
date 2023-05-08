@@ -173,4 +173,4 @@ function CheckFile($file_path)
 
 
 # Neofetch
-Start-Process neofetch -NoNewWindow -Wait
+# Start-Process neofetch -NoNewWindow -Wait
