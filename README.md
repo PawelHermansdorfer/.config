@@ -6,11 +6,11 @@
 ### Apps
  - yay (AUR) 
  - zsh (shell)
- - dwm/chadwm (window manager)
+ - dwm/[chadwm][Chadwm] (window manager)
  - lightdm (login manager)
  - [web-greeter][web_greeter] && [lightdm-neon][lightdm_theme]
  - neofetch
- - picom (pijulius fork)
+ - [picom (pijulius fork)][picom]
  - rofi
  - pipewire (audio control)
  - xfce4 for settings
@@ -42,9 +42,7 @@ $ sudo make clean install
 
  - Setup dwm profile
 ```console
-$ sudo touch /usr/share/xsessions/chadwm.desktop  
-```
-```console
+# Create dwm profile in  /usr/share/xsessions/dwm.desktop  
 [Desktop Entry]
 Encoding=UTF-8
 Name=Dwm
@@ -86,7 +84,7 @@ $ yay -S picom-pijulius-git
 
 
 # Windows
-![Desktop Screenshot](/images/windows.png "Hello")
+![Desktop Screenshot](/images/windows.png "Windows screenshot")
 
 ### Wallpaper and font
 - [Wallpaper][Windows wallpaper]
@@ -154,9 +152,11 @@ Go to (General > "Backup & restore" > Location) and select path to folder .confi
 
 
 # Grub
+![Desktop Screenshot](/images/grub.png "Windows screenshot")
+
 ### Theme
- - https://github.com/shvchk/poly-dark
- - https://github.com/RomjanHossain/Grub-Themes
+ - [Poly dark][grub_theme]
+ - [More fun themes][mode_grub_themes]
 
 ### Disable boot messages
 - Kernel parameters
@@ -181,12 +181,14 @@ echo 'Loading initial ram disk ...'
 
 [Linux wallpaper]: https://www.deviantart.com/grivetart/art/iPad-Pro-Procreate-test-607332295
 [Linux font]: https://archlinux.org/packages/community/any/ttf-liberation-mono-nerd/
-
 [web_greeter]: https://github.com/JezerM/web-greeter
 [lightdm_theme]: https://github.com/hertg/lightdm-neon
-
+[picom]: https://github.com/pijulius/picom
 
 [Unixsea]: https://github.com/unixsea/dotfiles/tree/master/.config
 [Chadwm]: https://github.com/siduck/chadwm/blob/main/chadwm/config.def.h
 [Ft-Labs]: https://github.com/FT-Labs/dotfiles
 [adi1090x]: https://github.com/adi1090x/widgets
+
+[grub_theme]: https://github.com/shvchk/poly-dark
+[mode_grub_themes]: https://github.com/RomjanHossain/Grub-Themes
