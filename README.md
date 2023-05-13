@@ -1,4 +1,6 @@
 # Arch Linux
+![Desktop Screenshot](/images/linux.png "Linux screenshot")
+
 ### Wallpaper and font
 - [Wallpaper][Linux wallpaper]
 - [Font][Linux font]
