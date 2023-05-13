@@ -23,7 +23,7 @@ $ cd yay
 $ sudo makepkg
 ```
 
- - install apps and fonts
+ - Install apps and fonts
 ```console
 $ pacman -S nvim rofi lightdm neofetch google-chrome ttf-iosevka-nerd ttf-jetbrains-mono-nerd ttf-liberation
 ```
@@ -71,7 +71,7 @@ greeter:
 ```console
 $ ln ~/.config/.zshrc ~/.zshrc
 ```
- - install picom
+ - Install picom
 ```console
 $ yay -S picom-pijulius-git
 ```
@@ -158,19 +158,18 @@ Go to (General > "Backup & restore" > Location) and select path to folder .confi
  - [Poly dark][grub_theme]
  - [More fun themes][mode_grub_themes]
 
-### Disable boot messages
-- Kernel parameters
+### Setup
+- Install theme
 ```console
-$ sudo nvim /etc/defalut/grub
+$ wget -O - https://github.com/shvchk/poly-dark/raw/master/install.sh | bash
 ```
-add "fsck.mode=skip quiet splash loglevel=3" to kernel boot parameters
+
+- Disable boot messages
+add "fsck.mode=skip quiet splash loglevel=3" to kernel boot parameters in /etc/defalut/grub
 
  - Booting messages
-```console
-$ sudo nvim /boot/grub/grub.cfg
 ```
-```
-# Comment these lines
+# Comment these lines /boot/grub/grub.cfg
 echo 'Loading Linux Linux...'
 echo 'Loading initial ram disk ...'
 ```
