@@ -29,3 +29,5 @@
 
 !suckless
 !suckless/**/*
+
+!.zshrc
