@@ -1,2 +1,22 @@
-scoop
-nvim/plugin
+# Ignore everything
+*
+
+# Inlcude this files
+!README.md
+!.gitmodules
+!.gitignore
+
+!images
+!images/**/*
+
+!neofetch
+!neofetch/**/*
+
+!powershell
+!powershell/**/*
+
+!powertoys
+!powertoys/**/*
+
+!windows_terminal
+!windows_terminal/**/*
