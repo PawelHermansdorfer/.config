@@ -20,3 +20,12 @@
 
 !windows_terminal
 !windows_terminal/**/*
+
+!alacritty
+!alacritty/**/*
+
+!rofi
+!rofi/**/*
+
+!suckless
+!suckless/**/*
