@@ -6,7 +6,7 @@
 ### Apps
 - yay (AUR) (git clone https://aur.archlinux.org/yay-git && cd yay && sudo makepkg)
 - zsh (shell)
-- dwa (window manager)
+- dwm/chadwm (window manager)
 - lightdm (login manager)
 - web-greeter && lightdm-neon (lightdm theme)
 - neofetch
