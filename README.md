@@ -26,24 +26,24 @@ $ sudo makepkg
 ```
 
  - Install apps and fonts
-```console
+```shell
 $ pacman -S nvim rofi lightdm neofetch google-chrome ttf-iosevka-nerd ttf-jetbrains-mono-nerd ttf-liberation
 ```
 
  - Clone Repository
-```console
+```shell
 $ cd ~
 $ git clone https://github.com/PawelHermansdorfer/.config --recurse-submodules
 ```
 
  - Build dwm
-```console
+```shell
 $ cd ~/.config/suckless/dwm
 $ sudo make clean install
 ```
 
  - Setup dwm profile
-```console
+```
 # Create dwm profile in  /usr/share/xsessions/dwm.desktop  
 [Desktop Entry]
 Encoding=UTF-8
@@ -55,7 +55,7 @@ Type=Application
 ```
 
 - Setup lightdm
-```console
+```shell
 $ yay -S web-greeter
 $ yay -S lightdm-theme-neon-git
 ```
@@ -187,7 +187,7 @@ echo 'Loading initial ram disk ...'
 [picom]: https://github.com/pijulius/picom
 
 [Unixsea]: https://github.com/unixsea/dotfiles/tree/master/.config
-[Chadwm]: https://github.com/siduck/chadwm/blob/main/chadwm/config.def.h
+[Chadwm]: https://github.com/siduck/chadwm
 [Ft-Labs]: https://github.com/FT-Labs/dotfiles
 [adi1090x]: https://github.com/adi1090x/widgets
 
