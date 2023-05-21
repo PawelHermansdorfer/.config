@@ -79,3 +79,6 @@ alias depends='function_depends'
 # Load syntax highlighting (should be last)
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
 
+
+# Created by `userpath` on 2023-05-19 16:47:15
+export PATH="$PATH:/home/PawelHermansdorfer/.local/bin"

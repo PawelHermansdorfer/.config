@@ -141,5 +141,5 @@ while true; do
     [ $interval = 0 ] || [ $(($interval % 1800)) = 0 ] && updates=$(pacman_updates)
     interval=$((interval + 1))
 
-    xsetroot -name "    $(cpu)$(ram)$btc_price$updates$(battery)$(clock)" && sleep 1
+    xsetroot -name "     $(cpu)$(ram)$btc_price$updates$(battery)$(clock)" && sleep 1
 done
