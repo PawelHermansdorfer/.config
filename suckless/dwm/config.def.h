@@ -118,7 +118,6 @@ static const Launcher launchers[] = {
     /* command     name to display */
     { taskmanager,         "" },
     { settingsmanager,     "" },
-
 };
 
 static const int tagschemes[] = {
