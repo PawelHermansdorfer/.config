@@ -131,6 +131,7 @@ $ yay -S picom-pijulius-git
 > Install-Module -Name PSReadLine -Force
 > Install-Module -Name PSFzf -Force
 > Install-Module -Name Pscx -Force
+> Install-Module VSSetup
 > scoop bucket add extras
 > scoop install neofetch fzf neovim powertoys
 ```
